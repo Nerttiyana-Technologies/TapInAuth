@@ -34,7 +34,7 @@ builder.Services.AddScoped<IClaimsTransformation, AdminRoleClaimsTransformation>
 // ─── Hermex: in-process dev SMTP + IMAP server + dashboard ────────────────
 // This runs the SMTP server on localhost:2525 and a web dashboard at /hermex
 // so you can see the magic-link and OTP emails this sample sends rendered in
-// the browser — no Mailtrap account, no Docker container, nothing to install.
+// the browser — no email-testing account, no Docker container, nothing to install.
 builder.Services.AddMail4Dev(o =>
 {
     o.SmtpPort = 2525;
